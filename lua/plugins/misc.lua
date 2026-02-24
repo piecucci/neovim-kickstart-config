@@ -1,6 +1,12 @@
 -- Standalone plugins with less than 10 lines of config go here
 return {
   {
+    -- Configures Lua LSP to understand Neovim APIs (vim.*, vim.uv, etc.)
+    'folke/lazydev.nvim',
+    ft = 'lua',
+    opts = {},
+  },
+  {
     -- Tmux & split window navigation
     'christoomey/vim-tmux-navigator',
   },
